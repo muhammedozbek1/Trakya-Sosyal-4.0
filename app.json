@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Trakya Sosyal",
+    "slug": "trakya-sosyal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.trakya.sosyal"
+    },
+    "android": {
+      "package": "com.trakya.sosyal",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F2C59",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.NOTIFICATIONS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0F2C59"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ders programınızı fotoğraftan taramak için galeri erişimi gereklidir.",
+          "cameraPermission": "Ders programı fotoğrafını çekmek için kamera erişimi gereklidir."
+        }
+      ],
+      "expo-splash-screen",
+      "expo-image"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4f2bc593-9b10-4049-9bb6-c0cda69f9f41"
+      }
+    },
+    "owner": "muhammed321"
+  }
+}
